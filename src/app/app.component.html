@@ -1,0 +1,29 @@
+
+
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <h1>S C R A P I F Y</h1>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search..." [(ngModel)]="item" (keyup.enter)="fetchReviews()" />
+      <button class="search-button" (click)="fetchReviews()">
+        <mat-icon>search</mat-icon>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="card-container">
+  <div *ngIf="isLoading" class="loading-spinner"></div>
+  <div *ngIf="!isLoading">
+    <mat-card *ngFor="let review of reviews" class="review-card">
+      <mat-card-title class="review-card-title">{{ review.Product }}</mat-card-title>
+      <mat-card-content class="review-card-content">
+        <p>Name: {{ review.Name }}</p>
+        <p>Rating: {{ review.Rating }}</p>
+        <p>Comment Head: {{ review.CommentHead }}</p>
+        <p>Comment: {{ review.Comment }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
