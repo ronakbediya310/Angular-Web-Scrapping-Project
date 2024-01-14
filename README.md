@@ -1,7 +1,7 @@
 # Web-Scraping-Frontend
-This project is designed to extract customer reviews of a specific project available on Flipkart using Python libraries and Angular. It involves scraping the Flipkart website to gather reviews and display them for analysis or other purposes. 
+This project is designed to extract customer reviews of a specific product available on Flipkart using Python libraries and Angular. It involves scraping the Flipkart website to gather reviews and display them for analysis or other purposes. 
 ## Features
-Extracts customer reviews of a particular project from Flipkart.
+Extracts customer reviews of a particular product from Flipkart.
 Utilizes Python libraries for web scraping.
 Integrates Angular for frontend display and user interaction.
 
